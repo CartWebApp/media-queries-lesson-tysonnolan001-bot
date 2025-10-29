@@ -63,13 +63,55 @@
 }
 
 /* Tablet Styles*/
+@media screen and (max-width:1024px) {
+  body {
+    background-color: red;
+  }
 
+  .flex-container {
+    height: auto;
+  }
 
+  [class^="box"] {
+    margin-bottom: 0.6rem;
 
+    &:is(:first-child){
+      margin-top: 0.6rem;
+    }
+  }
+
+.box7 {
+  order: 2;
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  order: 1;
+}
+.box6,
+.box8,
+.box9,
+.box10 {
+  order: 3;
+}
+
+.quarter{
+  width: 48.5%;
+}
+}
 
 /* Mobile Styles*/
+@media screen and (max-width:680px){
+  body{ background-color: #34495e;}
+  /*.flex-container {
+    flex-direction: column;
+  } */
+      [class^="box"] {
+        width: 98%;
+}
 
-
-
+}
 
 
